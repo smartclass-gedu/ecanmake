@@ -1,0 +1,190 @@
+{
+  "actions": [],
+  "allow_rename": 0,
+  "autoname": "format:IS-{YYYY}-{MM}-{#####}",
+  "creation": "2026-08-09 16:30:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 0,
+  "engine": "InnoDB",
+  "field_order": [
+    "session_code",
+    "learner_section",
+    "learner_type",
+    "individual_learner",
+    "school_booking",
+    "instructor_section",
+    "instructor",
+    "start_time",
+    "end_time",
+    "duration_hours",
+    "session_details_section",
+    "session_type",
+    "lesson_covered",
+    "location",
+    "notes_section",
+    "notes",
+    "learner_feedback",
+    "attendance",
+    "billing_section",
+    "cost"
+  ],
+  "fields": [
+    {
+      "fieldname": "session_code",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Session Code",
+      "read_only": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "learner_section",
+      "fieldtype": "Section Break",
+      "label": "Learner Info"
+    },
+    {
+      "fieldname": "learner_type",
+      "fieldtype": "Select",
+      "label": "Learner Type",
+      "options": "\nIndividual\nSchool Group"
+    },
+    {
+      "fieldname": "individual_learner",
+      "fieldtype": "Link",
+      "label": "Individual Learner",
+      "options": "User"
+    },
+    {
+      "fieldname": "school_booking",
+      "fieldtype": "Link",
+      "label": "School Booking",
+      "options": "Resource Booking"
+    },
+    {
+      "fieldname": "instructor_section",
+      "fieldtype": "Section Break",
+      "label": "Instructor & Timing"
+    },
+    {
+      "fieldname": "instructor",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "Instructor",
+      "options": "Instructor",
+      "reqd": 1
+    },
+    {
+      "fieldname": "start_time",
+      "fieldtype": "Datetime",
+      "in_list_view": 1,
+      "label": "Start Time",
+      "reqd": 1
+    },
+    {
+      "fieldname": "end_time",
+      "fieldtype": "Datetime",
+      "in_list_view": 1,
+      "label": "End Time",
+      "reqd": 1
+    },
+    {
+      "fieldname": "duration_hours",
+      "fieldtype": "Float",
+      "label": "Duration (hours)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "session_details_section",
+      "fieldtype": "Section Break",
+      "label": "Session Details"
+    },
+    {
+      "fieldname": "session_type",
+      "fieldtype": "Select",
+      "label": "Session Type",
+      "options": "\nLesson Delivery\nHands-On Guidance\nCertification\nTroubleshooting\nAdvanced Mentoring"
+    },
+    {
+      "fieldname": "lesson_covered",
+      "fieldtype": "Link",
+      "label": "Lesson Covered",
+      "options": "Course Lesson"
+    },
+    {
+      "fieldname": "location",
+      "fieldtype": "Link",
+      "label": "Location",
+      "options": "Lab Location"
+    },
+    {
+      "fieldname": "notes_section",
+      "fieldtype": "Section Break",
+      "label": "Notes & Feedback"
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Text",
+      "label": "Notes"
+    },
+    {
+      "fieldname": "learner_feedback",
+      "fieldtype": "Text",
+      "label": "Learner Feedback"
+    },
+    {
+      "fieldname": "attendance",
+      "fieldtype": "Select",
+      "label": "Attendance",
+      "options": "\nPresent\nAbsent\nLate"
+    },
+    {
+      "fieldname": "billing_section",
+      "fieldtype": "Section Break",
+      "label": "Billing"
+    },
+    {
+      "fieldname": "cost",
+      "fieldtype": "Currency",
+      "label": "Cost",
+      "read_only": 1
+    }
+  ],
+  "links": [],
+  "modified": "2026-08-09 16:30:00.000000",
+  "modified_by": "Administrator",
+  "module": "Everyone Can Make",
+  "name": "Instructor Session",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "select": 1,
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "delete": 0,
+      "email": 0,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "All",
+      "select": 1,
+      "share": 0,
+      "write": 0
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": [],
+  "track_changes": 1
+}

@@ -1,0 +1,303 @@
+{
+  "actions": [],
+  "allow_rename": 0,
+  "autoname": "format:RB-{YYYY}-{MM}-{#####}",
+  "creation": "2026-08-09 16:30:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 0,
+  "engine": "InnoDB",
+  "field_order": [
+    "booking_code",
+    "bookee_section",
+    "booking_type",
+    "individual_user",
+    "school",
+    "school_contact_person",
+    "school_group_size",
+    "resource_section",
+    "booking_purpose",
+    "course_outcome",
+    "resources",
+    "instructor_section",
+    "instructor",
+    "instructor_hours",
+    "timing_section",
+    "location",
+    "start_datetime",
+    "end_datetime",
+    "recurring",
+    "recurrence_pattern",
+    "recurrence_end_date",
+    "pricing_section",
+    "equipment_cost",
+    "instructor_cost",
+    "material_cost",
+    "discount_percent",
+    "total_cost",
+    "status_section",
+    "status",
+    "payment_status",
+    "payment_method",
+    "notes",
+    "meta_section",
+    "created_date",
+    "booking_made_by"
+  ],
+  "fields": [
+    {
+      "fieldname": "booking_code",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "in_standard_filter": 1,
+      "label": "Booking Reference",
+      "read_only": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "bookee_section",
+      "fieldtype": "Section Break",
+      "label": "Who is Booking"
+    },
+    {
+      "fieldname": "booking_type",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Booking Type",
+      "options": "\nIndividual\nSchool",
+      "reqd": 1
+    },
+    {
+      "depends_on": "eval: doc.booking_type == 'Individual'",
+      "fieldname": "individual_user",
+      "fieldtype": "Link",
+      "label": "Individual Learner",
+      "options": "User"
+    },
+    {
+      "depends_on": "eval: doc.booking_type == 'School'",
+      "fieldname": "school",
+      "fieldtype": "Link",
+      "label": "School/Organization",
+      "options": "School"
+    },
+    {
+      "depends_on": "eval: doc.booking_type == 'School'",
+      "fieldname": "school_contact_person",
+      "fieldtype": "Data",
+      "label": "Teacher/Coordinator Name"
+    },
+    {
+      "depends_on": "eval: doc.booking_type == 'School'",
+      "fieldname": "school_group_size",
+      "fieldtype": "Int",
+      "label": "Number of Students"
+    },
+    {
+      "fieldname": "resource_section",
+      "fieldtype": "Section Break",
+      "label": "Resources Booked"
+    },
+    {
+      "fieldname": "booking_purpose",
+      "fieldtype": "Select",
+      "label": "Booking Purpose",
+      "options": "\nCourse Outcome\nFree Exploration\nAdvanced Project\nMaintenance",
+      "reqd": 1
+    },
+    {
+      "depends_on": "eval: doc.booking_purpose == 'Course Outcome'",
+      "fieldname": "course_outcome",
+      "fieldtype": "Link",
+      "label": "Course Outcome",
+      "options": "Course Outcome"
+    },
+    {
+      "fieldname": "resources",
+      "fieldtype": "Table",
+      "label": "Equipment & Time Booked",
+      "options": "Booking Resource"
+    },
+    {
+      "fieldname": "instructor_section",
+      "fieldtype": "Section Break",
+      "label": "Instructor Assignment"
+    },
+    {
+      "fieldname": "instructor",
+      "fieldtype": "Link",
+      "label": "Assigned Instructor",
+      "options": "Instructor"
+    },
+    {
+      "fieldname": "instructor_hours",
+      "fieldtype": "Float",
+      "label": "Instructor Time (hours)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "timing_section",
+      "fieldtype": "Section Break",
+      "label": "Schedule"
+    },
+    {
+      "fieldname": "location",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "Location",
+      "options": "Lab Location",
+      "reqd": 1
+    },
+    {
+      "fieldname": "start_datetime",
+      "fieldtype": "Datetime",
+      "in_list_view": 1,
+      "label": "Start DateTime",
+      "reqd": 1
+    },
+    {
+      "fieldname": "end_datetime",
+      "fieldtype": "Datetime",
+      "in_list_view": 1,
+      "label": "End DateTime",
+      "reqd": 1
+    },
+    {
+      "fieldname": "recurring",
+      "fieldtype": "Check",
+      "label": "Recurring Booking"
+    },
+    {
+      "depends_on": "eval: doc.recurring == 1",
+      "fieldname": "recurrence_pattern",
+      "fieldtype": "Select",
+      "label": "Recurrence Pattern",
+      "options": "\nWeekly\nBi-Weekly\nMonthly"
+    },
+    {
+      "depends_on": "eval: doc.recurring == 1",
+      "fieldname": "recurrence_end_date",
+      "fieldtype": "Date",
+      "label": "Recurrence End Date"
+    },
+    {
+      "fieldname": "pricing_section",
+      "fieldtype": "Section Break",
+      "label": "Pricing"
+    },
+    {
+      "fieldname": "equipment_cost",
+      "fieldtype": "Currency",
+      "label": "Equipment Cost",
+      "read_only": 1
+    },
+    {
+      "fieldname": "instructor_cost",
+      "fieldtype": "Currency",
+      "label": "Instructor Cost",
+      "read_only": 1
+    },
+    {
+      "fieldname": "material_cost",
+      "fieldtype": "Currency",
+      "label": "Materials/Consumables Cost"
+    },
+    {
+      "fieldname": "discount_percent",
+      "fieldtype": "Percent",
+      "label": "Discount (%)"
+    },
+    {
+      "fieldname": "total_cost",
+      "fieldtype": "Currency",
+      "label": "Total Cost",
+      "read_only": 1
+    },
+    {
+      "fieldname": "status_section",
+      "fieldtype": "Section Break",
+      "label": "Status & Payment"
+    },
+    {
+      "default": "Pending",
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Status",
+      "options": "\nPending\nConfirmed\nCompleted\nCancelled"
+    },
+    {
+      "default": "Unpaid",
+      "fieldname": "payment_status",
+      "fieldtype": "Select",
+      "label": "Payment Status",
+      "options": "\nUnpaid\nPartial\nPaid\nRefunded"
+    },
+    {
+      "fieldname": "payment_method",
+      "fieldtype": "Select",
+      "label": "Payment Method",
+      "options": "\nCash\nCard\nBank Transfer\nSchool Invoice"
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Text",
+      "label": "Special Requirements / Notes"
+    },
+    {
+      "fieldname": "meta_section",
+      "fieldtype": "Section Break",
+      "label": "Meta"
+    },
+    {
+      "fieldname": "created_date",
+      "fieldtype": "Date",
+      "label": "Created Date",
+      "read_only": 1
+    },
+    {
+      "fieldname": "booking_made_by",
+      "fieldtype": "Link",
+      "label": "Booking Made By",
+      "options": "User",
+      "read_only": 1
+    }
+  ],
+  "links": [],
+  "modified": "2026-08-09 16:30:00.000000",
+  "modified_by": "Administrator",
+  "module": "Everyone Can Make",
+  "name": "Resource Booking",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "select": 1,
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "delete": 0,
+      "email": 0,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "All",
+      "select": 1,
+      "share": 0,
+      "write": 0
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": [],
+  "track_changes": 1
+}
