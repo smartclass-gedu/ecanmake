@@ -1,0 +1,223 @@
+{
+  "actions": [],
+  "allow_rename": 1,
+  "autoname": "field:equipment_code",
+  "creation": "2026-08-09 10:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 0,
+  "engine": "InnoDB",
+  "field_order": [
+    "equipment_name",
+    "equipment_code",
+    "category",
+    "details_section",
+    "description",
+    "manufacturer",
+    "model",
+    "serial_number",
+    "operations_section",
+    "location",
+    "acquisition_date",
+    "warranty_expiry",
+    "maintenance_schedule",
+    "booking_section",
+    "is_bookable",
+    "requires_operator_supervision",
+    "max_concurrent_users",
+    "hourly_rate",
+    "certification_section",
+    "requires_training",
+    "training_lesson",
+    "status_section",
+    "status",
+    "last_maintenance_date",
+    "maintenance_notes"
+  ],
+  "fields": [
+    {
+      "fieldname": "equipment_name",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "in_standard_filter": 1,
+      "label": "Equipment Name",
+      "reqd": 1
+    },
+    {
+      "fieldname": "equipment_code",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "in_standard_filter": 1,
+      "label": "Asset Tag / Serial Number",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "category",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "in_standard_filter": 1,
+      "label": "Category",
+      "options": "\nFabrication\nElectronics\nComputing\nSupport",
+      "reqd": 1
+    },
+    {
+      "fieldname": "details_section",
+      "fieldtype": "Section Break",
+      "label": "Details"
+    },
+    {
+      "fieldname": "description",
+      "fieldtype": "Text",
+      "label": "Description"
+    },
+    {
+      "fieldname": "manufacturer",
+      "fieldtype": "Data",
+      "label": "Manufacturer"
+    },
+    {
+      "fieldname": "model",
+      "fieldtype": "Data",
+      "label": "Model"
+    },
+    {
+      "fieldname": "serial_number",
+      "fieldtype": "Data",
+      "label": "Serial Number"
+    },
+    {
+      "fieldname": "operations_section",
+      "fieldtype": "Section Break",
+      "label": "Operations"
+    },
+    {
+      "fieldname": "location",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "Location",
+      "options": "Lab Location",
+      "reqd": 1
+    },
+    {
+      "fieldname": "acquisition_date",
+      "fieldtype": "Date",
+      "label": "Acquisition Date"
+    },
+    {
+      "fieldname": "warranty_expiry",
+      "fieldtype": "Date",
+      "label": "Warranty Expiry"
+    },
+    {
+      "fieldname": "maintenance_schedule",
+      "fieldtype": "Select",
+      "label": "Maintenance Schedule",
+      "options": "\nWeekly\nMonthly\nQuarterly\nAnnually"
+    },
+    {
+      "fieldname": "booking_section",
+      "fieldtype": "Section Break",
+      "label": "Booking"
+    },
+    {
+      "default": 1,
+      "fieldname": "is_bookable",
+      "fieldtype": "Check",
+      "label": "Available for Booking"
+    },
+    {
+      "fieldname": "requires_operator_supervision",
+      "fieldtype": "Check",
+      "label": "Requires Certified Operator"
+    },
+    {
+      "default": 1,
+      "fieldname": "max_concurrent_users",
+      "fieldtype": "Int",
+      "label": "Max Users Simultaneously"
+    },
+    {
+      "fieldname": "hourly_rate",
+      "fieldtype": "Currency",
+      "label": "Booking Rate/Hour"
+    },
+    {
+      "fieldname": "certification_section",
+      "fieldtype": "Section Break",
+      "label": "Certification"
+    },
+    {
+      "fieldname": "requires_training",
+      "fieldtype": "Check",
+      "label": "Requires Safety Training"
+    },
+    {
+      "fieldname": "training_lesson",
+      "fieldtype": "Link",
+      "label": "Linked Training Lesson",
+      "options": "Course Lesson"
+    },
+    {
+      "fieldname": "status_section",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "default": "Active",
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Status",
+      "options": "\nActive\nInactive\nMaintenance\nDecommissioned"
+    },
+    {
+      "fieldname": "last_maintenance_date",
+      "fieldtype": "Date",
+      "label": "Last Maintenance Date"
+    },
+    {
+      "fieldname": "maintenance_notes",
+      "fieldtype": "Text",
+      "label": "Maintenance Notes"
+    }
+  ],
+  "links": [],
+  "modified": "2026-08-09 10:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "Everyone Can Make",
+  "name": "Lab Equipment",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "select": 1,
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "delete": 0,
+      "email": 0,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "All",
+      "select": 1,
+      "share": 0,
+      "write": 0
+    }
+  ],
+  "quick_entry": 1,
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": [],
+  "track_changes": 1
+}

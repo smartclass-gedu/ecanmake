@@ -1,0 +1,80 @@
+[
+  {
+    "creation": "2026-08-09 10:00:00.000000",
+    "docstatus": 0,
+    "doctype": "Skill Domain",
+    "domain_name": "Electronics",
+    "description": "Sensors, Arduino, circuits, soldering, and electronic component design",
+    "icon": "⚡",
+    "idx": 1,
+    "modified": "2026-08-09 10:00:00.000000",
+    "modified_by": "Administrator",
+    "name": "Electronics",
+    "owner": "Administrator"
+  },
+  {
+    "creation": "2026-08-09 10:00:00.000000",
+    "docstatus": 0,
+    "doctype": "Skill Domain",
+    "domain_name": "Digital Fabrication",
+    "description": "Laser cutting, CNC machining, 3D printing, and subtractive/additive manufacturing",
+    "icon": "🔨",
+    "idx": 2,
+    "modified": "2026-08-09 10:00:00.000000",
+    "modified_by": "Administrator",
+    "name": "Digital Fabrication",
+    "owner": "Administrator"
+  },
+  {
+    "creation": "2026-08-09 10:00:00.000000",
+    "docstatus": 0,
+    "doctype": "Skill Domain",
+    "domain_name": "Design Thinking",
+    "description": "CAD, sketching, ideation, user research, and prototyping methodology",
+    "icon": "✏️",
+    "idx": 3,
+    "modified": "2026-08-09 10:00:00.000000",
+    "modified_by": "Administrator",
+    "name": "Design Thinking",
+    "owner": "Administrator"
+  },
+  {
+    "creation": "2026-08-09 10:00:00.000000",
+    "docstatus": 0,
+    "doctype": "Skill Domain",
+    "domain_name": "Software",
+    "description": "Python, JavaScript, embedded systems programming, and firmware development",
+    "icon": "💻",
+    "idx": 4,
+    "modified": "2026-08-09 10:00:00.000000",
+    "modified_by": "Administrator",
+    "name": "Software",
+    "owner": "Administrator"
+  },
+  {
+    "creation": "2026-08-09 10:00:00.000000",
+    "docstatus": 0,
+    "doctype": "Skill Domain",
+    "domain_name": "Hardware Design",
+    "description": "PCB design, schematics, circuit layout, and component selection",
+    "icon": "🔌",
+    "idx": 5,
+    "modified": "2026-08-09 10:00:00.000000",
+    "modified_by": "Administrator",
+    "name": "Hardware Design",
+    "owner": "Administrator"
+  },
+  {
+    "creation": "2026-08-09 10:00:00.000000",
+    "docstatus": 0,
+    "doctype": "Skill Domain",
+    "domain_name": "Mechanical Engineering",
+    "description": "CAM, structural design, motion design, and mechanical simulation",
+    "icon": "⚙️",
+    "idx": 6,
+    "modified": "2026-08-09 10:00:00.000000",
+    "modified_by": "Administrator",
+    "name": "Mechanical Engineering",
+    "owner": "Administrator"
+  }
+]

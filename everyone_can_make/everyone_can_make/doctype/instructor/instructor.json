@@ -1,0 +1,153 @@
+{
+  "actions": [],
+  "allow_rename": 0,
+  "autoname": "field:user_link",
+  "creation": "2026-08-09 10:15:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 0,
+  "engine": "InnoDB",
+  "field_order": [
+    "user_link",
+    "full_name",
+    "email",
+    "expertise_section",
+    "skill_domains",
+    "equipment_certifications",
+    "availability_section",
+    "primary_location",
+    "available_hours",
+    "billing_section",
+    "hourly_rate",
+    "flat_rate_per_session",
+    "status_section",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "user_link",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "in_standard_filter": 1,
+      "label": "User",
+      "options": "User",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fetch_from": "user_link.full_name",
+      "fieldname": "full_name",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Full Name",
+      "read_only": 1
+    },
+    {
+      "fetch_from": "user_link.email",
+      "fieldname": "email",
+      "fieldtype": "Data",
+      "label": "Email",
+      "read_only": 1
+    },
+    {
+      "fieldname": "expertise_section",
+      "fieldtype": "Section Break",
+      "label": "Expertise"
+    },
+    {
+      "fieldname": "skill_domains",
+      "fieldtype": "Table",
+      "label": "Certified Domains",
+      "options": "Instructor Skill"
+    },
+    {
+      "fieldname": "equipment_certifications",
+      "fieldtype": "Table",
+      "label": "Equipment Certifications",
+      "options": "Instructor Certification"
+    },
+    {
+      "fieldname": "availability_section",
+      "fieldtype": "Section Break",
+      "label": "Availability"
+    },
+    {
+      "fieldname": "primary_location",
+      "fieldtype": "Link",
+      "label": "Primary Location",
+      "options": "Lab Location"
+    },
+    {
+      "fieldname": "available_hours",
+      "fieldtype": "Table",
+      "label": "Availability Slots",
+      "options": "Instructor Hours"
+    },
+    {
+      "fieldname": "billing_section",
+      "fieldtype": "Section Break",
+      "label": "Billing"
+    },
+    {
+      "fieldname": "hourly_rate",
+      "fieldtype": "Currency",
+      "label": "Consulting Rate/Hour"
+    },
+    {
+      "fieldname": "flat_rate_per_session",
+      "fieldtype": "Currency",
+      "label": "Flat Rate/Session (optional)"
+    },
+    {
+      "fieldname": "status_section",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "default": "Active",
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Status",
+      "options": "\nActive\nInactive\nOnLeave"
+    }
+  ],
+  "links": [],
+  "modified": "2026-08-09 10:15:00.000000",
+  "modified_by": "Administrator",
+  "module": "Everyone Can Make",
+  "name": "Instructor",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "select": 1,
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "delete": 0,
+      "email": 0,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "All",
+      "select": 1,
+      "share": 0,
+      "write": 0
+    }
+  ],
+  "quick_entry": 1,
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": [],
+  "track_changes": 1
+}

@@ -1,0 +1,120 @@
+{
+  "actions": [],
+  "allow_rename": 0,
+  "autoname": "format:{equipment}-lifecycle",
+  "creation": "2026-08-09 10:15:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 0,
+  "engine": "InnoDB",
+  "field_order": [
+    "equipment",
+    "maintenance_section",
+    "maintenance_logs",
+    "usage_section",
+    "total_hours_used",
+    "total_sessions",
+    "cost_section",
+    "original_cost",
+    "depreciation_rate",
+    "current_book_value"
+  ],
+  "fields": [
+    {
+      "fieldname": "equipment",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "in_standard_filter": 1,
+      "label": "Equipment",
+      "options": "Lab Equipment",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "maintenance_section",
+      "fieldtype": "Section Break",
+      "label": "Maintenance"
+    },
+    {
+      "fieldname": "maintenance_logs",
+      "fieldtype": "Table",
+      "label": "Maintenance History",
+      "options": "Maintenance Log"
+    },
+    {
+      "fieldname": "usage_section",
+      "fieldtype": "Section Break",
+      "label": "Usage Tracking"
+    },
+    {
+      "fieldname": "total_hours_used",
+      "fieldtype": "Float",
+      "label": "Total Hours Used",
+      "read_only": 1
+    },
+    {
+      "fieldname": "total_sessions",
+      "fieldtype": "Int",
+      "label": "Total Sessions",
+      "read_only": 1
+    },
+    {
+      "fieldname": "cost_section",
+      "fieldtype": "Section Break",
+      "label": "Financial"
+    },
+    {
+      "fieldname": "original_cost",
+      "fieldtype": "Currency",
+      "label": "Original Cost"
+    },
+    {
+      "fieldname": "depreciation_rate",
+      "fieldtype": "Percent",
+      "label": "Depreciation Rate (%)"
+    },
+    {
+      "fieldname": "current_book_value",
+      "fieldtype": "Currency",
+      "label": "Current Book Value",
+      "read_only": 1
+    }
+  ],
+  "links": [],
+  "modified": "2026-08-09 10:15:00.000000",
+  "modified_by": "Administrator",
+  "module": "Everyone Can Make",
+  "name": "Asset Lifecycle",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "select": 1,
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 0,
+      "delete": 0,
+      "email": 0,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "All",
+      "select": 1,
+      "share": 0,
+      "write": 0
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": [],
+  "track_changes": 1
+}

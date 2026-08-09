@@ -1,0 +1,72 @@
+{
+  "actions": [],
+  "allow_rename": 0,
+  "autoname": "hash",
+  "creation": "2026-08-09 16:30:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "user",
+    "name",
+    "role",
+    "email"
+  ],
+  "fields": [
+    {
+      "fieldname": "user",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "User",
+      "options": "User",
+      "reqd": 1
+    },
+    {
+      "fetch_from": "user.full_name",
+      "fieldname": "name",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Name"
+    },
+    {
+      "fieldname": "role",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Role",
+      "options": "\nPrimary Admin\nTeacher\nLab Technician"
+    },
+    {
+      "fetch_from": "user.email",
+      "fieldname": "email",
+      "fieldtype": "Data",
+      "label": "Email",
+      "read_only": 1
+    }
+  ],
+  "istable": 1,
+  "links": [],
+  "modified": "2026-08-09 16:30:00.000000",
+  "modified_by": "Administrator",
+  "module": "Everyone Can Make",
+  "name": "School Coordinator",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 0,
+      "export": 0,
+      "print": 0,
+      "read": 1,
+      "report": 0,
+      "role": "All",
+      "select": 1,
+      "share": 0,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": [],
+  "track_changes": 0
+}

@@ -1,0 +1,207 @@
+{
+  "actions": [],
+  "allow_rename": 1,
+  "autoname": "field:school_name",
+  "creation": "2026-08-09 16:30:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 0,
+  "engine": "InnoDB",
+  "field_order": [
+    "school_name",
+    "school_code",
+    "admin_section",
+    "primary_contact",
+    "email",
+    "phone",
+    "address",
+    "membership_section",
+    "membership_type",
+    "membership_status",
+    "start_date",
+    "end_date",
+    "max_concurrent_groups",
+    "monthly_lab_budget",
+    "staff_section",
+    "coordinators",
+    "bookings_section",
+    "total_bookings",
+    "total_students_served",
+    "total_spent",
+    "billing_section",
+    "invoice_frequency",
+    "payment_terms"
+  ],
+  "fields": [
+    {
+      "fieldname": "school_name",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "in_standard_filter": 1,
+      "label": "School/Organization Name",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "school_code",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "School Code",
+      "unique": 1
+    },
+    {
+      "fieldname": "admin_section",
+      "fieldtype": "Section Break",
+      "label": "Administration"
+    },
+    {
+      "fieldname": "primary_contact",
+      "fieldtype": "Data",
+      "label": "Admin Name"
+    },
+    {
+      "fieldname": "email",
+      "fieldtype": "Data",
+      "label": "Email"
+    },
+    {
+      "fieldname": "phone",
+      "fieldtype": "Data",
+      "label": "Phone"
+    },
+    {
+      "fieldname": "address",
+      "fieldtype": "Text",
+      "label": "Address"
+    },
+    {
+      "fieldname": "membership_section",
+      "fieldtype": "Section Break",
+      "label": "Membership"
+    },
+    {
+      "default": "Partner School",
+      "fieldname": "membership_type",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Membership Type",
+      "options": "\nPartner School\nCommunity Organization\nCorporate"
+    },
+    {
+      "default": "Active",
+      "fieldname": "membership_status",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Membership Status",
+      "options": "\nActive\nInactive\nSuspended"
+    },
+    {
+      "fieldname": "start_date",
+      "fieldtype": "Date",
+      "label": "Start Date"
+    },
+    {
+      "fieldname": "end_date",
+      "fieldtype": "Date",
+      "label": "End Date"
+    },
+    {
+      "fieldname": "max_concurrent_groups",
+      "fieldtype": "Int",
+      "label": "Max Concurrent Student Groups"
+    },
+    {
+      "fieldname": "monthly_lab_budget",
+      "fieldtype": "Currency",
+      "label": "Monthly Budget (optional)"
+    },
+    {
+      "fieldname": "staff_section",
+      "fieldtype": "Section Break",
+      "label": "Staff"
+    },
+    {
+      "fieldname": "coordinators",
+      "fieldtype": "Table",
+      "label": "Lab Coordinators/Teachers",
+      "options": "School Coordinator"
+    },
+    {
+      "fieldname": "bookings_section",
+      "fieldtype": "Section Break",
+      "label": "Booking Summary"
+    },
+    {
+      "fieldname": "total_bookings",
+      "fieldtype": "Int",
+      "label": "Total Bookings",
+      "read_only": 1
+    },
+    {
+      "fieldname": "total_students_served",
+      "fieldtype": "Int",
+      "label": "Total Students Served",
+      "read_only": 1
+    },
+    {
+      "fieldname": "total_spent",
+      "fieldtype": "Currency",
+      "label": "Total Spent",
+      "read_only": 1
+    },
+    {
+      "fieldname": "billing_section",
+      "fieldtype": "Section Break",
+      "label": "Billing"
+    },
+    {
+      "fieldname": "invoice_frequency",
+      "fieldtype": "Select",
+      "label": "Invoice Frequency",
+      "options": "\nPer Booking\nWeekly\nMonthly\nQuarterly"
+    },
+    {
+      "fieldname": "payment_terms",
+      "fieldtype": "Data",
+      "label": "Payment Terms (e.g., Net 30)"
+    }
+  ],
+  "links": [],
+  "modified": "2026-08-09 16:30:00.000000",
+  "modified_by": "Administrator",
+  "module": "Everyone Can Make",
+  "name": "School",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "select": 1,
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "delete": 0,
+      "email": 0,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "All",
+      "select": 1,
+      "share": 0,
+      "write": 0
+    }
+  ],
+  "quick_entry": 1,
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": [],
+  "track_changes": 1
+}

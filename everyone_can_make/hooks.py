@@ -91,6 +91,14 @@ app_license = "mit"
 # before_uninstall = "everyone_can_make.uninstall.before_uninstall"
 # after_uninstall = "everyone_can_make.uninstall.after_uninstall"
 
+# Fixtures
+# --------
+# Automatically load fixtures on install/migrate
+fixtures = [
+	"custom_field",
+	"skill_domain",
+]
+
 # Integration Setup
 # ------------------
 # To set up dependencies/integrations with other apps
