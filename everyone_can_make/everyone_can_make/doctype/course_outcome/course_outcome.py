@@ -20,7 +20,7 @@ class CourseOutcome(Document):
 					total_minutes += row.duration_override
 				else:
 					# Fetch lesson's estimated_duration_minutes
-					lesson_doc = frappe.get_doc("Course Lesson", row.lesson)
+					lesson_doc = frappe.get_doc("Atomic Learning", row.lesson)
 					if hasattr(lesson_doc, "estimated_duration_minutes") and lesson_doc.estimated_duration_minutes:
 						total_minutes += lesson_doc.estimated_duration_minutes
 
