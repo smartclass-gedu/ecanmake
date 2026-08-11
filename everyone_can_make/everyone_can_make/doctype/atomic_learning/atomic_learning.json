@@ -1,37 +1,32 @@
 {
   "actions": [],
   "allow_rename": 1,
-  "autoname": "field:lesson_code",
+  "autoname": "field:course",
   "creation": "2026-08-09 22:35:00.000000",
   "doctype": "DocType",
   "editable_grid": 0,
   "engine": "InnoDB",
   "field_order": [
-    "lesson_title",
+    "course",
     "lesson_code",
     "description",
     "duration_section",
     "duration_hours",
     "duration_minutes",
     "difficulty_level",
-    "composition_section",
-    "objectives",
-    "materials",
-    "equipment",
-    "prerequisites",
     "status_section",
     "status"
   ],
   "fields": [
     {
-      "fieldname": "lesson_title",
+      "fieldname": "course",
       "fieldtype": "Link",
-      "options": "Course Lesson",
+      "options": "LMS Course",
       "in_list_view": 1,
       "in_standard_filter": 1,
-      "label": "Lesson Title",
+      "label": "Course",
       "reqd": 1,
-      "description": "Link to the native Frappe LMS Course Lesson"
+      "description": "Link to the LMS Course"
     },
     {
       "fieldname": "lesson_code",
@@ -70,35 +65,6 @@
       "options": "\nBeginner\nIntermediate\nAdvanced"
     },
     {
-      "fieldname": "composition_section",
-      "fieldtype": "Section Break",
-      "label": "Lesson Content"
-    },
-    {
-      "fieldname": "objectives",
-      "fieldtype": "Table",
-      "label": "Learning Objectives",
-      "options": "Lesson Objective"
-    },
-    {
-      "fieldname": "materials",
-      "fieldtype": "Table",
-      "label": "Materials Required",
-      "options": "Lesson Material"
-    },
-    {
-      "fieldname": "equipment",
-      "fieldtype": "Table",
-      "label": "Equipment Required",
-      "options": "Lesson Equipment"
-    },
-    {
-      "fieldname": "prerequisites",
-      "fieldtype": "Table",
-      "label": "Prerequisites",
-      "options": "Lesson Prerequisite"
-    },
-    {
       "fieldname": "status_section",
       "fieldtype": "Section Break",
       "label": "Status"
@@ -113,7 +79,7 @@
     }
   ],
   "links": [],
-  "modified": "2026-08-10 02:00:00.000000",
+  "modified": "2026-08-11 22:46:00.000000",
   "modified_by": "Administrator",
   "module": "Everyone Can Make",
   "name": "Atomic Learning",

@@ -11,8 +11,6 @@
     "outcome_code",
     "description",
     "learning_outcomes_text",
-    "composition_section",
-    "lessons",
     "difficulty_level",
     "target_audience",
     "total_hours",
@@ -49,17 +47,6 @@
       "fieldname": "learning_outcomes_text",
       "fieldtype": "Text",
       "label": "Learning Outcomes (bullet list)"
-    },
-    {
-      "fieldname": "composition_section",
-      "fieldtype": "Section Break",
-      "label": "Lesson Composition"
-    },
-    {
-      "fieldname": "lessons",
-      "fieldtype": "Table",
-      "label": "Lessons in This Outcome",
-      "options": "Outcome Lesson"
     },
     {
       "fieldname": "difficulty_level",
