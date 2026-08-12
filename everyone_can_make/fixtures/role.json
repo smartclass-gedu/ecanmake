@@ -1,0 +1,10 @@
+[
+  {
+    "docstatus": 0,
+    "doctype": "Role",
+    "desk_access": 1,
+    "disabled": 0,
+    "name": "Instructor",
+    "two_factor_required": 0
+  }
+]

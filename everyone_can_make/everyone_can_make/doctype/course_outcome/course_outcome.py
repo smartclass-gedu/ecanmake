@@ -6,6 +6,11 @@ from frappe.model.document import Document
 
 
 class CourseOutcome(Document):
+	def before_insert(self):
+		"""Set created_by to the current user if not already set"""
+		if not self.created_by:
+			self.created_by = frappe.session.user
+
 	def validate(self):
 		"""Recalculate total_hours based on linked lessons"""
 		self.calculate_total_hours()
