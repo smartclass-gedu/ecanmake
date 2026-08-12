@@ -5,3 +5,4 @@ everyone_can_make.patches.v1_0.rename_lesson_title_to_course
 
 [post_model_sync]
 # Patches added in this section will be executed after doctypes are migrated
+everyone_can_make.patches.rename_course_lessons_shorthand
