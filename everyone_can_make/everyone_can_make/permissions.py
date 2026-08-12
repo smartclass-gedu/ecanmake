@@ -26,50 +26,6 @@ def has_role(user, role_name):
 
 
 # ============================================================================
-# COURSE OUTCOME PERMISSIONS
-# ============================================================================
-
-def course_outcome_has_permission(doc, perm_type="read", user=None, raise_exception=False):
-	"""
-	Instructors can only view/edit courses they created (owner).
-	Admins have full access.
-	"""
-	if not user:
-		user = frappe.session.user
-
-	# Admin always has permission
-	if _is_admin_user(user):
-		return True
-
-	# For instructors: only owner (creator) can access
-	if perm_type in ("read", "write"):
-		if doc.owner == user:
-			return True
-
-	# Deny access for non-owners
-	if raise_exception:
-		frappe.throw(
-			f"You do not have permission to {perm_type} this Course Outcome. "
-			f"Only the creator can access it."
-		)
-
-	return False
-
-
-def get_course_outcome_permission_query_conditions(user):
-	"""
-	Return SQL condition to filter Course Outcomes visible to the user.
-	Instructors only see courses they created (owner = user).
-	Admins see all.
-	"""
-	if _is_admin_user(user):
-		return None  # No restriction for admins
-
-	# For instructors, restrict to their own created courses
-	return f"`tabCourse Outcome`.`owner` = '{frappe.db.escape(user)}'"
-
-
-# ============================================================================
 # LMS COURSE PERMISSIONS
 # ============================================================================
 

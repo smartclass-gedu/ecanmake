@@ -127,13 +127,11 @@ fixtures = [
 # Permissions evaluated in scripted ways
 
 permission_query_conditions = {
-	"Course Outcome": "everyone_can_make.permissions.get_course_outcome_permission_query_conditions",
 	"LMS Course": "everyone_can_make.permissions.get_course_permission_query_conditions",
 	"School": "everyone_can_make.permissions.get_school_permission_query_conditions",
 }
 
 has_permission = {
-	"Course Outcome": "everyone_can_make.permissions.course_outcome_has_permission",
 	"LMS Course": "everyone_can_make.permissions.course_has_permission",
 	"School": "everyone_can_make.permissions.school_has_permission",
 	"Instructor": "everyone_can_make.permissions.instructor_has_permission",
