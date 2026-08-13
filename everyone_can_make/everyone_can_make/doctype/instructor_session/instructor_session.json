@@ -108,7 +108,7 @@
       "fieldname": "lesson_covered",
       "fieldtype": "Link",
       "label": "Lesson Covered",
-      "options": "Atomic Learning"
+      "options": "Course Lesson"
     },
     {
       "fieldname": "location",

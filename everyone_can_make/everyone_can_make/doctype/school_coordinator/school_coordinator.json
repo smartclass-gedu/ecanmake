@@ -4,7 +4,7 @@
   "autoname": "hash",
   "creation": "2026-08-09 16:30:00.000000",
   "doctype": "DocType",
-  "editable_grid": 1,
+  "editable_grid": 0,
   "engine": "InnoDB",
   "field_order": [
     "user",

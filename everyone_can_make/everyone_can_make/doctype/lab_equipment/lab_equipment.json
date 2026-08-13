@@ -155,7 +155,7 @@
       "fieldname": "training_lesson",
       "fieldtype": "Link",
       "label": "Linked Training Lesson",
-      "options": "Atomic Learning"
+      "options": "Course Lesson"
     },
     {
       "fieldname": "status_section",

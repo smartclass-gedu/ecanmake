@@ -1,9 +1,10 @@
 [pre_model_sync]
 # Patches added in this section will be executed before doctypes are migrated
 # Read docs to understand patches: https://frappeframework.com/docs/v14/user/en/database-migrations
-everyone_can_make.patches.v1_0.rename_lesson_title_to_course
-everyone_can_make.patches.remove_course_outcome_doctypes
+# NOTE (Aug 13, 2026): Removed patches as part of Atomic Learning removal
+# - rename_lesson_title_to_course: Already applied on server; no longer needed
+# - remove_course_outcome_doctypes: Never implemented; removed from registry
 
 [post_model_sync]
 # Patches added in this section will be executed after doctypes are migrated
-everyone_can_make.patches.rename_course_lessons_shorthand
+# (No patches currently scheduled for post_model_sync)
