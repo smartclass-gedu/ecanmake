@@ -5,6 +5,7 @@
     "desk_access": 1,
     "disabled": 0,
     "name": "Instructor",
+    "role_name": "Instructor",
     "two_factor_required": 0
   }
 ]
