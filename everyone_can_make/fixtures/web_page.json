@@ -1,0 +1,14 @@
+[
+  {
+    "doctype": "Web Page",
+    "name": "become-an-instructor",
+    "title": "Become an Instructor",
+    "route": "become-an-instructor",
+    "published": 1,
+    "module": "Everyone Can Make",
+    "content_type": "Rich Text",
+    "meta_title": "Become an Instructor | Everyone Can Make",
+    "meta_description": "Apply to teach making, engineering, and design skills at Everyone Can Make labs.",
+    "main_section": "<div class=\"text-center\" style=\"padding: 3rem 1rem;\">\n<h1>Join Our Educator Community</h1>\n<p style=\"font-size:1.2rem; max-width:640px; margin: 1rem auto;\">Share your expertise and inspire the next generation of makers. We're looking for instructors across electronics, digital fabrication, design, software, and mechanical engineering.</p>\n<a class=\"btn btn-primary btn-lg\" href=\"/instructor-application\">Apply to Teach</a>\n</div>\n<div class=\"row\" style=\"max-width:960px; margin: 2rem auto;\">\n<div class=\"col-sm-4\"><h4>Why teach with us</h4><p>Work with motivated students and schools, set your own availability, and get paid per session or by the hour.</p></div>\n<div class=\"col-sm-4\"><h4>What we offer</h4><p>Access to fully equipped labs, teaching materials, and a platform that handles scheduling and bookings for you.</p></div>\n<div class=\"col-sm-4\"><h4>Who we're looking for</h4><p>Educators and practitioners with hands-on expertise in any of our skill domains, at any experience level.</p></div>\n</div>\n<div class=\"text-center\" style=\"padding: 1rem 0 3rem;\">\n<a class=\"btn btn-primary\" href=\"/instructor-application\">Start Your Application</a>\n</div>"
+  }
+]

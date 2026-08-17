@@ -1,0 +1,70 @@
+[
+  {
+    "doctype": "Workflow",
+    "name": "Instructor Application Approval",
+    "workflow_name": "Instructor Application Approval",
+    "document_type": "Instructor Application",
+    "is_active": 1,
+    "override_status": 0,
+    "send_email_alert": 0,
+    "workflow_state_field": "workflow_state",
+    "states": [
+      {
+        "state": "Pending Review",
+        "doc_status": "0",
+        "allow_edit": "System Manager",
+        "style": "Warning"
+      },
+      {
+        "state": "Needs More Info",
+        "doc_status": "0",
+        "allow_edit": "System Manager",
+        "style": "Warning"
+      },
+      {
+        "state": "Approved",
+        "doc_status": "0",
+        "allow_edit": "System Manager",
+        "style": "Success"
+      },
+      {
+        "state": "Rejected",
+        "doc_status": "0",
+        "allow_edit": "System Manager",
+        "style": "Danger"
+      }
+    ],
+    "transitions": [
+      {
+        "state": "Pending Review",
+        "action": "Approve",
+        "next_state": "Approved",
+        "allowed": "System Manager"
+      },
+      {
+        "state": "Pending Review",
+        "action": "Reject",
+        "next_state": "Rejected",
+        "allowed": "System Manager"
+      },
+      {
+        "state": "Pending Review",
+        "action": "Request More Info",
+        "next_state": "Needs More Info",
+        "allowed": "System Manager"
+      },
+      {
+        "state": "Needs More Info",
+        "action": "Back to Review",
+        "next_state": "Pending Review",
+        "allowed": "System Manager"
+      },
+      {
+        "state": "Needs More Info",
+        "action": "Reject",
+        "next_state": "Rejected",
+        "allowed": "System Manager"
+      }
+    ]
+  }
+]

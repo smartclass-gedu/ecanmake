@@ -98,6 +98,9 @@ fixtures = [
 	"custom_field",
 	"skill_domain",
 	{"dt": "Role", "filters": [["name", "=", "Instructor"]]},
+	{"dt": "Workflow", "filters": [["document_type", "=", "Instructor Application"]]},
+	{"dt": "Web Form", "filters": [["name", "=", "instructor-application"]]},
+	{"dt": "Web Page", "filters": [["name", "=", "become-an-instructor"]]},
 ]
 
 # Integration Setup
