@@ -100,7 +100,7 @@ fixtures = [
 	{"dt": "Role", "filters": [["name", "=", "Instructor"]]},
 	{"dt": "Workflow", "filters": [["document_type", "=", "Instructor Application"]]},
 	{"dt": "Web Form", "filters": [["name", "=", "instructor-application"]]},
-	{"dt": "Web Page", "filters": [["name", "=", "become-an-instructor"]]},
+	{"dt": "Web Page", "filters": [["name", "=", "join-the-community"]]},
 ]
 
 # Integration Setup

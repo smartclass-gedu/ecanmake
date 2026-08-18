@@ -14,14 +14,10 @@
     "applied_on",
     "background_section",
     "school",
-    "years_of_teaching_experience",
-    "bio_motivation",
     "expertise_section",
     "skill_domains",
     "portfolio_section",
     "preferred_lab_location",
-    "portfolio_url",
-    "resume_attachment",
     "review_section",
     "workflow_state",
     "reviewed_by",
@@ -75,16 +71,6 @@
       "options": "School"
     },
     {
-      "fieldname": "years_of_teaching_experience",
-      "fieldtype": "Int",
-      "label": "Years of Teaching Experience"
-    },
-    {
-      "fieldname": "bio_motivation",
-      "fieldtype": "Text",
-      "label": "Bio & Motivation"
-    },
-    {
       "fieldname": "expertise_section",
       "fieldtype": "Section Break",
       "label": "Expertise"
@@ -105,16 +91,6 @@
       "fieldtype": "Link",
       "label": "Preferred Lab Location",
       "options": "Lab Location"
-    },
-    {
-      "fieldname": "portfolio_url",
-      "fieldtype": "Data",
-      "label": "Portfolio/Website URL"
-    },
-    {
-      "fieldname": "resume_attachment",
-      "fieldtype": "Attach",
-      "label": "Resume/CV"
     },
     {
       "fieldname": "review_section",

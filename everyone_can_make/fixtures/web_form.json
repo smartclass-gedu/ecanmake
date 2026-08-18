@@ -2,7 +2,7 @@
   {
     "doctype": "Web Form",
     "name": "instructor-application",
-    "title": "Become an Instructor",
+    "title": "Join the Community",
     "route": "instructor-application",
     "doc_type": "Instructor Application",
     "module": "Everyone Can Make",
@@ -14,21 +14,17 @@
     "allow_edit": 0,
     "show_sidebar": 0,
     "breadcrumbs": 0,
-    "introduction_text": "Join our community of educators. Tell us about your expertise and teaching experience — we'll review every application personally.",
+    "introduction_text": "Join our community of educators. Tell us about your expertise — we'll review every application personally.",
     "success_title": "Application submitted!",
-    "success_message": "Thanks for applying to become an Instructor. We'll review your application and reach out at the email you provided within 5-7 business days.",
+    "success_message": "Thanks for applying to join the community. We'll review your application and reach out at the email you provided within 5-7 business days.",
     "button_label": "Submit Application",
     "web_form_fields": [
       { "fieldname": "full_name", "fieldtype": "Data", "label": "Full Name", "reqd": 1 },
       { "fieldname": "email", "fieldtype": "Data", "label": "Email", "reqd": 1 },
       { "fieldname": "phone", "fieldtype": "Data", "label": "Phone" },
       { "fieldname": "school", "fieldtype": "Link", "label": "School/Organization (leave blank if freelancer)", "options": "School" },
-      { "fieldname": "years_of_teaching_experience", "fieldtype": "Int", "label": "Years of Teaching Experience" },
-      { "fieldname": "bio_motivation", "fieldtype": "Text", "label": "Bio & Motivation" },
       { "fieldname": "skill_domains", "fieldtype": "Table", "label": "Skill Domains", "options": "Application Skill", "reqd": 1 },
-      { "fieldname": "preferred_lab_location", "fieldtype": "Link", "label": "Preferred Lab Location", "options": "Lab Location" },
-      { "fieldname": "portfolio_url", "fieldtype": "Data", "label": "Portfolio/Website URL" },
-      { "fieldname": "resume_attachment", "fieldtype": "Attach", "label": "Resume/CV" }
+      { "fieldname": "preferred_lab_location", "fieldtype": "Link", "label": "Preferred Lab Location", "options": "Lab Location" }
     ]
   }
 ]

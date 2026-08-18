@@ -12,9 +12,12 @@ class InstructorApplication(Document):
 			self.applied_on = frappe.utils.now()
 
 	def validate(self):
-		"""Block a second open application for the same email."""
+		"""Block a second open application for the same email, and disallow gmail.com addresses."""
 		if not self.email:
 			return
+
+		if self.email.strip().lower().endswith("@gmail.com"):
+			frappe.throw("Please use a non-Gmail email address to apply.")
 
 		duplicate = frappe.db.exists(
 			"Instructor Application",
