@@ -1,0 +1,26 @@
+[
+  {
+    "doctype": "Workflow State",
+    "name": "Pending Review",
+    "workflow_state_name": "Pending Review",
+    "style": "Warning"
+  },
+  {
+    "doctype": "Workflow State",
+    "name": "Needs More Info",
+    "workflow_state_name": "Needs More Info",
+    "style": "Warning"
+  },
+  {
+    "doctype": "Workflow State",
+    "name": "Approved",
+    "workflow_state_name": "Approved",
+    "style": "Success"
+  },
+  {
+    "doctype": "Workflow State",
+    "name": "Rejected",
+    "workflow_state_name": "Rejected",
+    "style": "Danger"
+  }
+]

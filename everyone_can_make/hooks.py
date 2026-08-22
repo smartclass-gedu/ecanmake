@@ -98,6 +98,7 @@ fixtures = [
 	"custom_field",
 	"skill_domain",
 	{"dt": "Role", "filters": [["name", "=", "Instructor"]]},
+	{"dt": "Workflow State", "filters": [["name", "in", ["Pending Review", "Needs More Info", "Approved", "Rejected"]]]},
 	{"dt": "Workflow", "filters": [["document_type", "=", "Instructor Application"]]},
 	{"dt": "Web Form", "filters": [["name", "=", "instructor-application"]]},
 	{"dt": "Web Page", "filters": [["name", "=", "join-the-community"]]},
